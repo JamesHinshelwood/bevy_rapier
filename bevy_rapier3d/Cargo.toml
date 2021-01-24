@@ -29,11 +29,11 @@ serde-serialize = [ "rapier3d/serde-serialize" ]
 enhanced-determinism = [ "rapier3d/enhanced-determinism" ]
 
 [dependencies]
-bevy = { version = "0.4", default-features = false }
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "3d0c4e380ca0776f810252730a6d9cc53119a155", default-features = false }
 nalgebra = "0.23"
 rapier3d = "0.4"
 concurrent-queue = "1"
 
 [dev-dependencies]
-bevy_wgpu = "0.4.0"
-bevy_winit = { version = "0.4.0", features = [ "x11" ] }
+bevy_wgpu = { git = "https://github.com/bevyengine/bevy", rev = "3d0c4e380ca0776f810252730a6d9cc53119a155" }
+bevy_winit = { git = "https://github.com/bevyengine/bevy", rev = "3d0c4e380ca0776f810252730a6d9cc53119a155", features = [ "x11" ] }
